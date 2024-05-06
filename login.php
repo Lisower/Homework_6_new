@@ -36,7 +36,6 @@ else {
   if ($row_count <= 0) {
       print('Пользователя с такими логином и паролем нет в базе данных!');
       print(substr(md5('41cc4c7'),0,7));
-      // header('Location: login.php');
       exit();
   }
   
@@ -47,6 +46,8 @@ else {
   $_SESSION['login'] = $_POST['login'];
   $_SESSION['pass'] = substr(md5($_POST['pass']),0,7);
   $_SESSION['uid'] = uniqid();
+
+  include(admin.php);
 
   header('Location: ./');
 }
