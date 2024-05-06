@@ -18,8 +18,8 @@ print('Вы успешно авторизовались и видите защи
 ?>
 
 <button class="Exit">Выйти</button>
-<button class="Stats">Посмотреть статистику ответов</button>
-<button class="Change">Редактировать пользователя</button>
+<button class="Button_Stats">Посмотреть статистику ответов</button>
+<button class="Button_Change">Редактировать пользователя</button>
 
 // *********
 // Здесь нужно прочитать отправленные ранее пользователями данные и вывести в таблицу.
