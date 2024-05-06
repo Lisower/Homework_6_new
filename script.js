@@ -7,7 +7,7 @@ Button.addEventListener('click', () => {
     Popup.style.display = 'block';
 });
 
-Exit.addEventListener('click', () => {
+Exit_Form.addEventListener('click', () => {
     Popup.style.display = 'none';
 });
 
