@@ -20,7 +20,7 @@ if (empty($_SERVER['PHP_AUTH_USER']) ||
 }
 
 print('Вы успешно авторизовались и видите защищенные паролем данные.');
-?php>
+php?>
 
 <button class="Exit">X</button>
 <button class="stats">Посмотреть статистику ответов</button>
