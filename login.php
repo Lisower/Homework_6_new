@@ -46,7 +46,5 @@ else {
   $_SESSION['pass'] = substr(md5($_POST['pass']),0,7);
   $_SESSION['uid'] = uniqid();
 
-  include(admin.php);
-
   header('Location: ./');
 }
