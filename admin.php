@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="style.css">
+<script defer src="script_admin.js"></script>
 <?php
 
 // Пример HTTP-аутентификации.
