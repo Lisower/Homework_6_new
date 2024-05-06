@@ -22,7 +22,7 @@ print('Вы успешно авторизовались и видите защи
 <button class="Button_Stats">Посмотреть статистику ответов</button>
 <button class="Button_Change">Редактировать пользователя</button>
 
-<div id="Popup_Stats" class="Popup_Stats">
+<div id="Popup" class="Popup">
     <div id="Stats" class="Stats">
         
     </div>
