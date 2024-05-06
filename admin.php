@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="style.css">
+<button class="stats">Посмотреть статистику ответов</button>
 <?php
 
 /**
