@@ -14,7 +14,7 @@ Button_Exit.addEventListener('click', () => {
 });
 
 Button_Change.addEventListener('click', () => {
-    
+    ;
 });
 
 window.addEventListener('popstate', () => {
