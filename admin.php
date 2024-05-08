@@ -18,9 +18,9 @@ if (empty($_SERVER['PHP_AUTH_USER']) ||
 print('Вы успешно авторизовались и видите защищенные паролем данные.');
 ?>
 
-<button class="Exit">Выйти</button>
-<button class="Button_Stats">Посмотреть статистику ответов</button>
-<button class="Button_Change">Редактировать пользователя</button>
+<button id="Exit">Выйти</button>
+<button id="Button_Stats">Посмотреть статистику ответов</button>
+<button id="Button_Change">Редактировать пользователя</button>
 
 <div id="Popup" class="Popup">
     <div id="Stats" class="Stats">
