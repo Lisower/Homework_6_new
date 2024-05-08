@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="style.css">
-<script defer src="script_admin.js"></script>
 <?php
 require 'db.php';
 
@@ -25,6 +23,8 @@ print('Вы успешно авторизовались и видите защи
 ?>
 
 <html>
+<link rel="stylesheet" href="style.css">
+<script defer src="script_admin.js"></script>
 <button class="Button_Stats",id="Button_Stats">Посмотреть статистику ответов</button>
 <button class="Button_Change",id="Button_Change">Редактировать пользователя</button>
 
