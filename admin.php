@@ -1,15 +1,15 @@
 <link rel="stylesheet" href="style.css">
 <script defer src="script_admin.js"></script>
 <?php
+require 'db.php';
 
-// Пример HTTP-аутентификации.
-// PHP хранит логин и пароль в суперглобальном массиве $_SERVER.
-// Подробнее см. стр. 26 и 99 в учебном пособии Веб-программирование и веб-сервисы.
+$adminData = db_select('Admin', ['login','password']);
+
 if (empty($_SERVER['PHP_AUTH_USER']) ||
     empty($_SERVER['PHP_AUTH_PW']) ||
-    $_SERVER['PHP_AUTH_USER'] != 'admin' ||
-    md5($_SERVER['PHP_AUTH_PW']) != md5('admin_post_admin')) {
-  header('HTTP/1.1 401 Unanthorized');
+    $_SERVER['PHP_AUTH_USER'] != $adminData[0] ||
+    substr(md5($_SERVER['PHP_AUTH_PW']), 0, 20) != $adminData[1] {
+  header('HTTP/1.1 401 Unauthorized');
   header('WWW-Authenticate: Basic realm="My site"');
   print('<h1>401 Требуется авторизация</h1>');
   exit();
