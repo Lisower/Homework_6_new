@@ -10,7 +10,7 @@ Button_Stats.addEventListener('click', () => {
 });
 
 Button_Exit.addEventListener('click', () => {
-    
+    window.location.href = 'logout_admin.php';
 });
 
 Button_Change.addEventListener('click', () => {
