@@ -64,19 +64,6 @@ Form input,textarea,select{
     width: 35px;
     height: 35px;
 }
-.Exit{
-    position: fixed;
-    top: 1vh;
-    left: 90vw;
-    margin-top: 0px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    border: 2px solid rgb(232, 224, 3);
-    border-radius: 10px;
-    text-align: center;
-}
 .error {
   border: 2px solid red;
 }
