@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+<script defer src="script_admin.js"></script>
 <?php
 require 'db.php';
 
@@ -22,15 +24,11 @@ if (isset($_GET['action']) && $_GET['action'] == 'fetch_stats') {
 print('Вы успешно авторизовались и видите защищенные паролем данные.');
 ?>
 
-<html>
-<link rel="stylesheet" href="style.css">
-<script defer src="script_admin.js"></script>
-<button class="Button_Stats",id="Button_Stats">Посмотреть статистику ответов</button>
-<button class="Button_Change",id="Button_Change">Редактировать пользователя</button>
+<button id="Button_Stats", class="Button_Stats">Посмотреть статистику ответов</button>
+<button id="Button_Change", class="Button_Change">Редактировать пользователя</button>
 
 <div id="Popup" class="Popup">
     <div id="Stats" class="Stats">
         
     </div>
 </div>
-</html>
