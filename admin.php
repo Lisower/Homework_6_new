@@ -13,7 +13,7 @@ if (empty($_SERVER['PHP_AUTH_USER']) ||
   header('WWW-Authenticate: Basic realm="My site"');
   print('<h1>401 Требуется авторизация</h1>');
     print($_SERVER['PHP_AUTH_USER']);
-    print(substr(md5($_SERVER['PHP_AUTH_PW']));
+    print(substr(md5($_SERVER['PHP_AUTH_PW'])));
     print($adminData[0]);
     print($adminData[1]);
   exit();
