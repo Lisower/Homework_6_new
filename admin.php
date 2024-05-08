@@ -3,7 +3,7 @@
 <?php
 require 'db.php';
 
-$adminData = db_select('Admin', ['login','password']);
+$adminData = db_select('Admin', 'login, password']);
 
 if (empty($_SERVER['PHP_AUTH_USER']) ||
     empty($_SERVER['PHP_AUTH_PW']) ||
