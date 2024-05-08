@@ -5,16 +5,16 @@ const Popup = document.getElementById('Popup');
 const Stats = document.getElementById('Stats');
 const Form = document.getElementById('Form');
 
-Button_Stats.addEventListener('click', () => {
-    Popup.style.display = 'block';
-});
+//Button_Stats.addEventListener('click', () => {
+//    Popup.style.display = 'block';
+//});
 
 Button_Exit.addEventListener('click', () => {
     window.location.href = 'logout_admin.php';
 });
 
 Button_Change.addEventListener('click', () => {
-    ;
+    
 });
 
 window.addEventListener('popstate', () => {
