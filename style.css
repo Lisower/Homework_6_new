@@ -67,3 +67,14 @@ Form input,textarea,select{
 .error {
   border: 2px solid red;
 }
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
