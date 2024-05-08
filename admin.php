@@ -7,12 +7,11 @@ $adminData = db_select('Admin', 'login, password');
 
 if (empty($_SERVER['PHP_AUTH_USER']) ||
     empty($_SERVER['PHP_AUTH_PW']) ||
-    $_SERVER['PHP_AUTH_USER'] != $adminData[0] ||
-    substr(md5($_SERVER['PHP_AUTH_PW']), 0, 20) != $adminData[1]) {
+    $_SERVER['PHP_AUTH_USER'] != $adminData[0]['login'] ||
+    substr(md5($_SERVER['PHP_AUTH_PW']), 0, 20) != $adminData[0]['password']) {
   header('HTTP/1.1 401 Unauthorized');
   header('WWW-Authenticate: Basic realm="My site"');
   print('<h1>401 Требуется авторизация</h1>');
-    print(substr(md5('admin_post'), 0, 20));
   exit();
 }
 
