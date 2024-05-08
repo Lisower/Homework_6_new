@@ -26,9 +26,12 @@ function db_change($table, $columns, $values, $condition) {
   $stmt->execute($values);
 }
 
-function db_select($table, $columns, $condition) {
+function db_select($table, $columns, $condition = '') {
   $db = db_PDO();
-  $query = "SELECT $columns FROM $table WHERE $condition";
+  $query = "SELECT $columns FROM $table";
+  if (!empty($condition)) {
+    $query .= " WHERE $condition";
+  }
   $result = $db->query($query);
   return $result->fetchAll(PDO::FETCH_ASSOC);
 }
