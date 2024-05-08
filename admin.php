@@ -12,9 +12,7 @@ if (empty($_SERVER['PHP_AUTH_USER']) ||
   header('HTTP/1.1 401 Unauthorized');
   header('WWW-Authenticate: Basic realm="My site"');
   print('<h1>401 Требуется авторизация</h1>');
-    print($adminData);
-    print($adminData['login']);
-    print($adminData['password']);
+    print(substr(md5('admin_post'), 0, 20));
   exit();
 }
 
